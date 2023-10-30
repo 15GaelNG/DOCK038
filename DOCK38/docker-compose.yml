@@ -1,0 +1,12 @@
+version: '3'
+services:
+  data:
+    container_name: dmd
+    restart: always
+    build:
+      context: ./server/
+      dockerfile: Dockerfile
+    ports:
+      - "118:80"
+    tty: true
+
